@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stylesheet.css">
+    <title></title>
+</head>
+<script type="text/javascript"> 
+  var checkAge = window.prompt("Please enter your age:")
+  
+  if (checkAge < 16){
+
+    window.alert("You entered " + checkAge + " years old.");
+    window.alert("You must be 16 to visit this site.");
+    window.location.href= "https://cquinn21.github.io/lab4/";
+  }
+
+  else if (checkAge >= 16 && checkAge < 101){
+    
+    window.alert("Hello! Welcome to Game Trust!")
+  }
+  
+  else {
+    window.alert("Are you really that old?");
+  }
+  
+</script>
+<body>
+    <div class="main">
+        <div>
+            <img src="images/Controller.svg" class="logo"><a href="https://cquinn21.github.io/lab4/" target="_blank" style="color: white; text-decoration: none;"><h1>Game Trust</h1></a>
+        </div>
+    
+        <div>
+          <div class="container">
+          <img class="mySlides" src="images/skyrim2.png">
+          <img class="mySlides" src="images/cyberpunk.png">
+          <img class="mySlides" src="images/Destiny2.png">
+          <img class="mySlides" src="images/valorant.jpeg">
+          <div class="overlay">
+          <div class="text"><a href="https://jalah07.github.io/Lab07/Lab_07/" target=“_blank” class="text1" onclick="return confirm('Are you sure, you want to leave this page?')"> See Other Featured Games Here</a>
+          </div>
+        </div>
+        </div>
+      
+        <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 5000); // Change image every 2 seconds
+        }
+        </script>
+    <br>
+    <h2>Featured  Games</h2>
+    
+    <!-- Game Grid -->
+    <div class="row">
+      <div class="column">
+          <img src="images/Uncharted 4.jpeg" alt="Uncharted 4" class="image2";">
+          <br>
+          <div class="content">
+            <br>
+          <center><a href="https://www.youtube.com/watch?v=hh5HV4iic1Y" target="_blank" rel="noopener noreferrer">
+            <img border="0" alt="Uncharted 4 Trailer" src="images/play.png" class="trailer">
+            </a></center>
+            <h3>Uncharted 4: A Thief's End</h3>
+              <hr>
+            <p>The story follows Nathan Drake, a now retired treasure hunter, now reunited with his long lost brother Samuel. He must save his brother from a tyrant by seeking Captain Henry Avery's legendary fabled pirate treasure.
+              <br><br>
+            <b>Genre:</b> Action-adventure, third-person shooter
+              <br><br>
+            <b>Developer:</b> Naughty Dog
+              <br><br>
+            <b>Publisher:</b> Sony Interactive Entertainment
+              <br><br>
+            <b>ESRB Rating:</b> T for Teen for violence, blood, language, suggestive themes, and tobacco Use.
+              <br><br>
+            For more information, see <a href="https://www.esrb.org/ratings/34425/Uncharted+4%3A+A+Thiefs+End/" target=“_blank” class="link";">ESRB Ratings</a>.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+            <img src="images/tombraider.jpeg" alt="Tomb Raider" class="image2";">
+              <br><br>
+          <center><a href="https://www.youtube.com/watch?v=r_WbvIDAcA4" target="_blank" rel="noopener noreferrer">
+            <img border="0" alt="Tomb Raider Trailer" src="images\play.png" class="trailer">
+            </a></center>
+            <h3>Tomb Raider</h3>
+              <hr>
+            <p>Follows Laura Croft on her first adventure. This is her origin story. As her ship wrecks she starts off as a scared adventurer and becomes a hardened survivor trying to survive a forgotten island. Laura will face many trials and dangers.
+              <br><br>
+            <b>Genre:</b> Action-adventure
+              <br><br>
+            <b>Developer:</b> Crystal Dynamics, Feral Interactive
+              <br><br>
+            <b>Publisher:</b> Square Enix, Feral Interactive
+              <br><br>
+            <b>ESRB Rating:</b>  M for Mature for blood, gore, intense violence, and strong language.
+              <br><br>
+            For more information, see <a href="https://www.esrb.org/ratings/32731/Tomb+Raider/" target=“_blank” class="link";">ESRB Ratings</a>. </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+            <img src="images/witcher3.jpeg" alt="Witcher 3" class="image2";">
+              <br><br>
+          <center><a href="https://www.youtube.com/watch?v=XHrskkHf958" target="_blank" rel="noopener noreferrer">
+            <img border="0" alt="Witcher 3 Trailer" src="images/play.png" class="trailer">
+            </a></center>
+            <h3>The Witcher 3: Wild Hunt</h3>
+              <hr>
+            <p>Witcher 3 is based on Slavonic Mythology. The player plays as Geralt of Rivia who is a witcher for hire to slay monsters while also searching for his adopted daughter that is in danger.
+              <br><br>
+            <b>Genre:</b> Action role-playing
+              <br><br>
+            <b>Developer:</b> CD Projekt, CD Projekt RED
+              <br><br>
+            <b>Publisher:</b> CD Projekt
+              <br><br>
+            <b>ESRB Rating:</b> M for Mature for blood and gore, intense violence, nudity, strong language ,strong sexual content, use of alcohol.
+              <br><br>
+            For more information, see <a href="https://www.esrb.org/ratings/36457/The+Witcher+3%3A+Wild+Hunt/" target=“_blank” class="link";">ESRB Ratings</a>. </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+            <img src="images/valhalla1.jpeg" alt="Assassin's Creed" class="image2";">
+              <br><br>
+          <center><a href="https://www.youtube.com/watch?v=ssrNcwxALS4" target="_blank" rel="noopener noreferrer">
+            <img border="0" src="images/play.png" alt="Assassin's Creed Trailer" class="trailer">
+            </a></center>
+            <h3>Assassin's Creed Valhalla</h3>
+              <hr>
+            <p>Assassin's Creed takes place partly in the 21st Century and the years 872-878 AD. It follows modern day Layla Hassan, an assassin, who relives the memories of a viking named Eivor to save the world from destruction.
+              <br><br>
+            <b>Genre:</b> Action-adventure
+              <br><br>
+            <b>Developer:</b> Ubisoft Montreal, Ubisoft San Francisco
+              <br><br>
+            <b>Publisher:</b> Ubisoft, Ubisoft San Francisco
+              <br><br>
+            <b>ESRB Rating:</b> M for Mature for blood, gore, intense violence, partial nudity, sexual themes, strong language, use of drugs and alcohol.
+              <br><br>
+            For more information, see <a href="https://www.esrb.org/ratings/37243/Assassins+Creed+Valhalla/" target=“_blank” class="link";">ESRB Ratings</a>. </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+            <img src="images/control1.jpeg" alt="Control" class="image2";">
+              <br><br>
+          <center><a href="https://www.youtube.com/watch?v=F74LLDhAhhI" target="_blank" rel="noopener noreferrer">
+            <img border="0" alt="Control Game Trailer" src="images/play.png" class="trailer">
+            </a></center>
+            <h3>Control</h3>
+              <hr>
+            <p>Control is a story about Jesse Faden. She is caught in the middle of a deadly conflict between a secret government agency and otherworldly forces that are invading and corrupting reality.
+              <br><br>
+            <b>Genre:</b> Action-adventure, third-person shooter
+              <br><br>
+            <b>Developer:</b> Remedy Entertainment
+              <br><br>
+            <b>Publisher:</b> 505 Games
+              <br><br>
+            <b>ESRB Rating:</b> M for Mature for blood, violence, and strong language.
+              <br><br>
+            For more information, see <a href="https://www.esrb.org/ratings/36329/Control/" target=“_blank” class="link";">ESRB Ratings</a>. </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+            <img src="images/nightmares.png" alt="Little Nightmares" class="image2";">
+              <br><br>
+          <center><a href="https://www.youtube.com/watch?v=aOadxZBsPiA" target="_blank" rel="noopener noreferrer">
+            <img border="0" alt="Little Nightmares Game Trailer" src="images/play.png" class="trailer">
+            </a></center>
+            <h3>Little Nightmares</h3>
+              <hr>
+            <p>Following six, a hungry little girl who has to escape the Maw, a hungry vessel that is inhabited by monstrous, twisted beings.
+              <br><br>
+            <b>Genre:</b> Puzzle-platform horror adventure game
+              <br><br>
+            <b>Developer:</b> Tarsier Studios, Supermassive Games, Engine Software
+              <br><br>
+            <b>Publisher:</b> BANDAI NAMCO, Namco Bandai Games America Inc.
+              <br><br>
+            <b>ESRB Rating:</b> T for Teen for blood and violence.
+              <br><br>
+            For more information, see <a href="https://www.esrb.org/ratings/36841/Little+Nightmares/" target=“_blank” class="link";">ESRB ratings</a>.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+            <img src="images/dishonored2.jpeg" alt="Dishonored 2" class="image2";">
+              <br><br>
+          <center><a href="https://www.youtube.com/watch?v=7bLNC8VDTlQ" target="_blank" rel="noopener noreferrer">
+            <img border="0" alt="Dishonored 2 Game Trailer" src="images/play.png" class="trailer">
+            </a></center>
+            <h3>Dishonored 2</h3>
+              <hr>
+            <p>The story follows Emily, who is about to become Empress when suddenly otherwordly beings take over. Emily becomes a supernatural assassin to reclaim her throne.
+              <br><br>
+            <b>Genre:</b> Action-adventure, Stealth
+              <br><br>
+            <b>Developer:</b> Arkane Studios
+              <br><br>
+            <b>Publisher:</b> Bethesda Softworks
+              <br><br>
+            <b>ESRB Rating:</b> M for Mature for blood, gore, intense violence, strong language, and suggestive themes.
+              <br><br>
+            For more information, see <a href="https://www.esrb.org/ratings/34591/Dishonored+2/" target=“_blank” class="link";">ESRB Ratings</a>. </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+            <img src="images/medium.jpeg" alt="The Medium" class="image2";">
+              <br><br>
+          <center><a href="https://www.youtube.com/watch?v=iJCE9umarQ0" target="_blank" rel="noopener noreferrer">
+            <img border="0" alt="The Medium Game Trailer" src="images/play.png" class="trailer">
+            </a></center>
+            <h3>The Medium</h3>
+              <hr>
+            <p>Medium follows Marianne, a medium that is able to communicate with the dead. She navigates both spirit world and an abandoned Soviet-era resort in Poland. Marianne will travel to the spirit world to not only help move on the dead, but to avoid monsters and solve puzzles.
+              <br><br>
+            <b>Genre:</b> Puzzle, Psychological horror, Survival horror, Speculative fiction, Societal
+              <br><br>
+            <b>Developer:</b> Bloober Team
+              <br><br>
+            <b>Publisher:</b> Bloober Team, NA PUBLISHING INC.
+              <br><br>
+            <b>ESRB Rating:</b> M for Mature for strong language, blood, and intense violence
+              <br><br>
+            For more information, see <a href="https://www.ign.com/articles/the-medium-ps5-xbox-series-x-pc-rated-esrb" target=“_blank” class="link";">IGN</a>. </p>
+        </div>
+      </div>
+    </div>
+    <div class="content2">
+      <form onsubmit="return results();" method="post"  action="mailto:jquinn300@gmail.com">
+      <h4>Enter Name:</h4>
+      <input id="name"  type="text" name="name" />
+
+      <h4>Enter Email:</h4>
+      <input id="email" type="text" name="email"  />
+
+      <h4>What is your favorite game?</h4>
+
+      <input id="poll1" type="radio"  name="game_poll"  value="Uncharted 4" /> Uncharted 4 <br/>
+      <input id="poll1" type="radio"  name="game_poll"  value="Tombraider" /> Tombraider <br/>
+      <input id="poll1" type="radio"  name="game_poll"  value="The Witcher 3" /> The Witcher 3 <br/>
+      <input id="poll1" type="radio"  name="game_poll"  value="Assassin's Creed Valhalla" /> Assassin's Creed Valhalla <br/>
+      <input id="poll1" type="radio"  name="game_poll"  value="Control" /> Control <br/>
+      <input id="poll1" type="radio"  name="game_poll"  value="Little Nightmares" /> Little Nightmares <br/>
+      <input id="poll1" type="radio"  name="game_poll"  value="Dishonred 2" /> Dishonored 2 <br/>
+      <input id="poll1" type="radio"  name="game_poll"  value="Medium" /> Medium <br/>
+    </form>
+    </div>
+</body>
+</html>
